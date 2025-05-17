@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="ProOOp.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OOP_PROJECT</title>
+</head>
+<body>
+
+<div id="mainContent" class="hidden" style="flex: 1; display: flex;">
+
+  <div class="sidebar">   
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('reflection')">Reflection</a>
+    <a href="#" onclick="showPage('activity1')">Activity 1</a>
+    <a href="#" onclick="showPage('activity2')">Activity 2</a>
+    <a href="#" onclick="showPage('activity3')">Activity 3</a>
+    <a href="#" onclick="showPage('activity4')">Activity 4</a>
+    <a href="#" onclick="showPage('activity5')">Activity 5</a>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <span id="userName"></span>
+      <button class="logout" onclick="logout()">LOG OUT</button>
+    </div>
+    <div id="pageContent" class="page-content">
+
+      <div id="home" class="act5 page active">
+          <h1>Member Overview</h1>         
+          <h2>Jaydie Reyes </h2>
+          <p> Web-developer<br></p>
+          <h2>Jasmine Manuel </h2>
+          <p> Web-developer<br></p>
+          <h2>Jurelle Mercado </h2>
+          <p> Web-developer</p>
+      </div>
+
+      <div id="reflection" class="act5 page">
+        <div id="refH1" class="refH1">
+          <h1> Reflection </h1>
+        </div>
+        <div id="ref" class="ref">
+          <h3>As a first year student wuth no prior JavaScript experience, diving into Object-Oriented Programming (OOP) was
+            initially overwhelming. Learning JavaScript Syntax added another layer of complexity for me at first.
+            Debugging and understanding the behavior of the this keyword were particularly challanging. 
+            <br>
+            <br> However, overtime, I beggan to appreciate how OOP helps breakdown problems into manageable pieces. As I practices,
+            I could see how classes modeled real-world entities, and this principles of OOP made my code more organized
+            and scalable. By the end of the of the semester, I was able to create small projects, such as a basic banking system,
+            which boosted my confidence<br>
+            <br>
+            The professor player a crucial role in making the complex material more approachable. Through clear explanations,
+            real-world examples, and patient guidance, helped bridge the gap between theory and practice. Their ability to break
+            down abstract concepts into digestablr pieces made learning easier, and their feedback was instrumental in improving
+            my coding skills. <br>
+            <br>
+            Overall, While the the learning curve was steep, this experience  laid a solid foundation for my future in 
+            programming, and I'm excited to continue exploring javaScript and OOP in greater depth.</h3>
+        </div>
+      </div>
+
+      <div id="activity1" class="act5 page">
+        <h1>Home Page</h1>
+        <p>Welcome to the home page.</p>
+      </div>
+
+      <div id="activity2" class="act5 page">
+        <h1>Button Functions</h1>
+        <ul>
+          <li><button id="click" onclick="showAlert()">Show Alert</button></li>
+          <li><button id="click" onclick="changeText()">Change Text</button></li>
+          <li><button id="click" onclick="changeColor()">Change Color</button></li>
+        </ul>
+        <div id="textBox">This is some text.</div>
+      </div>
+      <div id="activity3" class="act5 page">
+        <h1>Bitwise Operators: Explanation and Example</h1>
+
+    <div class="section">
+        <h2>What are Bitwise Operators?</h2>
+        <p>Bitwise operators are used to perform bit-level operations on integers. They work on the binary representation of numbers and operate directly on their individual bits. The most commonly used bitwise operators are:</p>
+    </div>
+
+    <div class="section">
+        <h2>List of Bitwise Operators</h2>
+        <table class="operator-table">
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&amp;</td>
+                    <td>Bitwise AND</td>
+                    <td><strong>5 &amp; 3</strong> = 1</td>
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>Bitwise OR</td>
+                    <td><strong>5 | 3</strong> = 7</td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>Bitwise XOR</td>
+                    <td><strong>5 ^ 3</strong> = 6</td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>Bitwise NOT</td>
+                    <td><strong>~5</strong> = -6</td>
+                </tr>
+                <tr>
+                    <td>&lt;&lt;</td>
+                    <td>Left Shift</td>
+                    <td><strong>5 &lt;&lt; 1</strong> = 10</td>
+                </tr>
+                <tr>
+                    <td>&gt;&gt;</td>
+                    <td>Right Shift</td>
+                    <td><strong>5 &gt;&gt; 1</strong> = 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Detailed Explanation</h2>
+        <p>Here are some more details on each of the bitwise operators:</p>
+        <ul>
+            <li><strong>AND (&amp;)</strong>: The result of bitwise AND is 1 if both bits are 1, otherwise the result is 0.</li>
+            <li><strong>OR (|)</strong>: The result of bitwise OR is 1 if at least one of the bits is 1.</li>
+            <li><strong>XOR (^)</strong>: The result of bitwise XOR is 1 if only one of the bits is 1, otherwise the result is 0.</li>
+            <li><strong>NOT (~)</strong>: Bitwise NOT inverts all the bits. This is a unary operator.</li>
+            <li><strong>Left Shift (&lt;&lt;)</strong>: The bits of the number are shifted to the left by the specified number of positions. This operation is equivalent to multiplying the number by 2 for each shift.</li>
+            <li><strong>Right Shift (&gt;&gt;)</strong>: The bits of the number are shifted to the right by the specified number of positions. This operation is equivalent to dividing the number by 2 for each shift.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Example</h2>
+        <p class="example">Let's take two integers: <strong>5</strong> and <strong>3</strong>, whose binary forms are:</p>
+        <p class="example">5 = <strong>101</strong> (in binary)</p>
+        <p class="example">3 = <strong>011</strong> (in binary)</p>
+        <p class="example">Now, applying the <strong>AND</strong> operator:</p>
+        <p class="example">5 &amp; 3 = <strong>101 &amp; 011 = 001</strong> (binary) = 1 (decimal)</p>
+        <p class="example">So, <strong>5 &amp; 3 = 1</strong>.</p>
+    </div>
+      </div>
+      </div>
+
+      <div id="activity4" class="act5 page">
+        <div class="container">
+          <h1>Input Output of Basic Information</h1>
+      
+          <form id="infoForm">
+              <label for="name">Name:<br></label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="age"><br>Age:<br></label>
+              <input type="number" id="age" name="age" required>
+      
+              <label for="email"><br>Email:<br></label>
+              <input type="email" id="email" name="email" required>
+    <br><br>
+              <button type="submit">Submit</button>
+          </form>
+      
+          <div id="output" class="output" style="display:none;">
+              <h2>Output:</h2>
+              <p><strong>Name:</strong> <span id="outputName"></span></p>
+              <p><strong>Age:</strong> <span id="outputAge"></span></p>
+              <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+          </div>
+      </div>
+      
+      <script>
+          document.getElementById('infoForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              const name = document.getElementById('name').value;
+              const age = document.getElementById('age').value;
+              const email = document.getElementById('email').value;
+      
+              document.getElementById('outputName').textContent = name;
+              document.getElementById('outputAge').textContent = age;
+              document.getElementById('outputEmail').textContent = email;
+      
+              document.getElementById('output').style.display = 'block';
+          });
+      </script>
+      </div>
+
+      <div id="activity5" class="act5 page">
+        <h1>Activity 5</h1>
+        <h2>Temperature Checker</h2>
+
+        <!-- <label class="temp" for="temp">Temperature (°C):</label><br>
+        <input class="temptext" type="text" name="temp" id="temp"/><br><br>
+        <button class="checkbutton" onclick="checkTemperature()">Check</button>
+
+        <div class="tempresult" id="result"></div>
+      </div> -->
+      <form id="tempForm">
+        <!-- <input type="text" id="city" placeholder="Enter city name" required /> -->
+        <!-- <button type="submit">Check Temperature</button> -->
+    </form>
+
+    <!-- Range Slider for Temperature -->
+    <div>
+        <input type="range" id="tempSlider" min="-30" max="50" step="1" value="20" />
+        <p>Temperature: <span id="sliderTemp">20</span>°C</p>
+    </div>
+
+    <!-- Temperature Status -->
+    <div id="status">
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="statusText"></p> <!-- For weather status -->
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<script src="ProOOP.js"></script>
+
+<script>
+  function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    const targetPage = document.getElementById(pageId);
+    if (targetPage) {
+      targetPage.classList.add('active');
+    }
+  }
+
+  function showAlert() {
+    alert("Button clicked!");
+  }
+
+  function changeText() {
+    document.getElementById("textBox").textContent = "The text has been changed!";
+  }
+
+  function changeColor() {
+    const box = document.getElementById("textBox");
+    box.style.color = box.style.color === "red" ? "black" : "red";
+  }
+
+  // activty 5
+
+  // function checkTemperature() {
+  //   const input = document.getElementById("temp").value;
+  //   const temp = parseFloat(input);
+  //   const result = document.getElementById("result");
+
+  //   if (isNaN(temp)) {
+  //     result.textContent = "Please enter a valid number.";
+  //   } else if (temp < 0) {
+  //     result.textContent = "It's freezing cold.";
+  //   } else if (temp >= 0 && temp <= 20) {
+  //     result.textContent = "It's cold.";
+  //   } else if (temp >= 21 && temp <= 30) {
+  //     result.textContent = "It's warm.";
+  //   } else if (temp > 30) {
+  //     result.textContent = "It's hot.";
+  //   }
+  // }
+
+  async function getTemperature(event) {
+    event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+    const city = document.getElementById("city").value;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.cod === "404") {
+            alert("City not found!");
+        } else {
+            const temp = data.main.temp;
+            const description = data.weather[0].description;
+            
+            // Display the temperature and description
+            document.getElementById("temperature").textContent = `Temperature: ${temp}°C`;
+            document.getElementById("description").textContent = `Weather: ${description}`;
+            
+            // Classifying weather based on the temperature
+            classifyTemperature(temp);
+        }
+    } catch (error) {
+        console.error("Error fetching weather data:", error);
+        alert("Failed to retrieve weather data.");
+    }
+}
+
+// Function to classify temperature based on slider or fetched value
+function classifyTemperature(temp) {
+    let weatherStatus = "";
+
+    // Classifying weather based on temperature
+    if (temp <= 15) {
+        weatherStatus = "Cold";
+    } else if (temp > 15 && temp <= 25) {
+        weatherStatus = "Warm";
+    } else {
+        weatherStatus = "Hot";
+    }
+
+    // Display weather classification
+    document.getElementById("statusText").textContent = `It's currently ${weatherStatus}.`;
+}
+
+// Listen for the form submit event
+document.getElementById("tempForm").addEventListener("submit", getTemperature);
+
+// Update slider value dynamically and classify temperature based on the slider
+document.getElementById("tempSlider").addEventListener("input", function() {
+    const sliderTemp = this.value;
+    document.getElementById("sliderTemp").textContent = sliderTemp + "°C";
+    classifyTemperature(sliderTemp);
+});
+</script>
+
+</body>
+</html>

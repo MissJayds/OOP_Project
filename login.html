@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>LOG IN</title>
+</head>
+<body>
+    <div class="con">
+        <h1>LOG IN</h1>
+        <form method="post" name="loginfrm">
+            <input type="text" name="uname" placeholder="Username" required>
+            <input type="password" name="pass" placeholder="Password" required>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <button onclick="login()">LOG IN</button>
+    </div>
+</body>
+</html>

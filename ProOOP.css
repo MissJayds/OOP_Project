@@ -1,0 +1,298 @@
+.page {
+  display: none;      
+}
+
+.active {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background: #1f2a48;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar a {
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar a:hover {
+  background: #324067;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.page-content {
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #00c853;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 10%;
+}
+
+select, button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 10%;
+}
+
+.hidden {
+  display: none;  
+}
+
+.checkbutton {
+  font-size: 28px;
+  width: 20%;
+  color: black;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.checkbutton:hover {
+  background: black;
+  cursor: pointer;
+  color: #f0f2f5;
+}
+
+.checkbutton:active {
+  background-color: #f0f2f5;
+  color: black;
+}
+
+.act5 { 
+  margin: auto;
+  padding: 130px;
+  width: 50%;
+  text-align: center; 
+  background: #1f2a48;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: white;
+  font-family: Arial;
+ }
+
+ .tempresult {
+  font-size: 32px;
+  padding-top: 40px;
+  text-align: center;
+
+ }
+ .temp {
+  font-size: 28px;
+  margin: 30px;
+  padding: 40px;
+ }
+
+
+
+ .temptext {
+  height: 10%;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+ }
+
+ .temptext:focus { 
+  background-color: lightgray;
+
+  }
+
+ a:hover {
+  background-color: white;
+  color: red;
+
+ }
+
+ .logout {
+  font-size: 18px;
+  width: 10%;
+  color: black;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+
+}
+
+.logout:hover {
+  background: black;
+  cursor: pointer;
+  color: #f0f2f5;
+}
+
+.logout:active {
+  background-color: #f0f2f5;
+  color: black;
+}
+
+#textBox {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+ 
+#click {
+  text-align: center;
+  width: 500px;
+  font-size: large;
+}
+.act2 {
+text-align: center;
+}
+
+ul {
+list-style: none;
+} 
+
+.activity2{
+text-align: center;
+}
+.ref {
+text-align: left;
+}
+
+.refH1 {
+font-size: 30px;
+}
+
+.operator-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.operator-table, .operator-table th, .operator-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.operator-table th {
+  background-color: #34495e;
+  color: white;
+}
+
+.example {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #1f2a48;
+}
+
+.member {
+  text-align: left;
+  font-size: large;
+}
+
+.memberOverview {
+  font-size: x-large;
+}
+
+
+h1 {
+  text-align: center;
+}
+input, button {
+  text-align: left;
+  align-items: center;
+  width: 40%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000000;
+}
+button {
+  background-color: #180857;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+
+}
+button:hover {
+  background-color: #ef0808;
+}
+.output {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #180857;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #ecf0f1;
+}
+
+.container {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #1f2a48;
+}
